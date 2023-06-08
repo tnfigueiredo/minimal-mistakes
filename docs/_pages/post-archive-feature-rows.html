@@ -44,7 +44,13 @@ feature_row4:
     btn_class: "btn--primary"
 ---
 
-{% for post in site.posts limit: 5 %}
+{% if site.locale contains 'en' %}
+  {% assign filtered_posts = site.posts | where_exp:"posts", "posts.url contains '/en/'" %}
+{% else %}
+  {% assign filtered_posts = site.posts | where_exp:"posts", "posts.url contains site.locale" %}
+{% endif %}
+
+{% for post in filtered_posts limit: 5 %}
   {% include archive-single.html %}
 {% endfor %}
 
