@@ -2,9 +2,11 @@
 main:
 #  - title: "Quick-Start Guide"
 #    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Posts"
+  - title: "Articles"
+    title_key: "menu_articles"
     url: /year-archive/
   - title: "About"
+    title_key: "menu_about"
     url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
