@@ -53,7 +53,7 @@ en: &DEFAULT_EN
   bio                        : "IT professional since 2003, tech enthusiast, willing to contribute with whoever it is possible"
   career                     : "Software Engineer <br> Solutions Architect"
   subtitle                   : "Sharing ideas"
-  greeting                   : "Hello"
+  greeting                   : "Be Welcome!"
   home_intro: |-
     This spot came up to centralize and facilitate the content publishing I write, as also for sharing articles and relevant topics 
     I believe that are interesting. It will also complement my LinkedIn activities. Besides that, I will keep references to my 
@@ -335,7 +335,7 @@ pt-BR:
   bio                        : "Profissional de TI desde 2003, entusiasta de tecnologia, buscando contribuir sempre que possível."
   career                     : "Engenheiro de Software <br> Arquiteto de Soluções"
   subtitle                   : "Compartilhando idéias"
-  greeting                   : "Olá"
+  greeting                   : "Seja bem vindo!"
   home_intro: |-
     Esse espaço surgiu para centralizar e facilitar a publicação de conteúdos escrito por mim, assim como compartilhamento
     de artigos que achei relevantes ou interessantes. Ele servirá como um complemento às minhas atividades no LinkedIn. Também irei 
