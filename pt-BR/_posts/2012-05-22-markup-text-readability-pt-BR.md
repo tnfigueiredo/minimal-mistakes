@@ -2,6 +2,8 @@
 title: "Markup: Teste de Leitura de Texto"
 excerpt: "Um monte de texto para testar leitura."
 comments: true
+lang: "pt-BR"
+permalink: /pt-BR/example-article-pt-br
 tags: 
   - sample post
   - readability

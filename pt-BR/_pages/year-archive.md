@@ -1,8 +1,8 @@
 ---
 title: "Posts by Year"
 title_key: "title_year_archive"
-permalink: en/year-archive/
-lang: "en"
+permalink: /pt-BR/year-archive/
+lang: "pt-BR"
 layout: posts
 author_profile: true
 ---

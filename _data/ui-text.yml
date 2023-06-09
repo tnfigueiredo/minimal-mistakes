@@ -56,16 +56,6 @@ en: &DEFAULT_EN
   bio                        : "IT professional since 2003, tech enthusiast, willing to contribute with whoever it is possible"
   career                     : "Software Engineer <br> Solutions Architect"
   subtitle                   : "Sharing ideas"
-  greeting                   : "Be Welcome!"
-  home_intro: |-
-    This spot came up to centralize and facilitate the content publishing I write, as also for sharing articles and relevant topics 
-    I believe that are interesting. It will also complement my LinkedIn activities. Besides that, I will keep references to my 
-    Github and for ideas and projects I use in my experimental process.
-    
-    Probably the content of my Github repositories become more focused to give instructions to run their experimental process, bringing  
-    into articles here theoretical foundation which concerns experimentation.
-    
-    I'm open to suggestions, contributions, and also for doubts clarifying. Be welcome.
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -341,16 +331,6 @@ pt-BR:
   bio                        : "Profissional de TI desde 2003, entusiasta de tecnologia, buscando contribuir sempre que possível."
   career                     : "Engenheiro de Software <br> Arquiteto de Soluções"
   subtitle                   : "Compartilhando idéias"
-  greeting                   : "Seja bem vindo!"
-  home_intro: |-
-    Esse espaço surgiu para centralizar e facilitar a publicação de conteúdos escrito por mim, assim como compartilhamento
-    de artigos que achei relevantes ou interessantes. Ele servirá como um complemento às minhas atividades no LinkedIn. Também irei 
-    manter referências para meu Github e para as idéias e projetos dos quais eu costumo fazer meus processos de experimentação.
-    
-    A tendência é que o conteúdo dos meus repositórios Github fique mais enxuto e focado para rodar o objetivo de experimentação do 
-    repositório, para buscar concentrar em artigos a fundamentação teórica que cerca os processos de experimentação.
-    
-    Estou aberto a sugestões, contribuições, e também para o esclarecimento de dúvidas. Sejam bem vindos.
 
 # Italian
 # -------

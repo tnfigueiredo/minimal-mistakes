@@ -1,7 +1,8 @@
 ---
-title: "Splash Page"
+title: " "
 layout: splash
-permalink: /about/
+lang: "en"
+permalink: en/about/
 date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"

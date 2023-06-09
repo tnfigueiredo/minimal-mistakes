@@ -4,19 +4,19 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[page.lang].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
-  {% if site.locale contains 'en' %}
+  {% if page.lang contains 'en' %}
     {% assign posts = paginator.posts | where_exp:"posts", "posts.url contains '/en/'" %}
   {% else %}
-    {% assign posts = paginator.posts | where_exp:"posts", "posts.url contains site.locale" %}
+    {% assign posts = paginator.posts | where_exp:"posts", "posts.url contains page.lang" %}
   {% endif %}
 {% else %}
-  {% if site.locale contains 'en' %}
+  {% if page.lang contains 'en' %}
     {% assign posts = site.posts | where_exp:"posts", "posts.url contains '/en/'" %}
   {% else %}
-    {% assign posts = site.posts | where_exp:"posts", "posts.url contains site.locale" %}
+    {% assign posts = site.posts | where_exp:"posts", "posts.url contains page.lang" %}
   {% endif %}
 {% endif %}
 

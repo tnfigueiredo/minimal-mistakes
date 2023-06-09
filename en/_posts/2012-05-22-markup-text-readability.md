@@ -2,6 +2,8 @@
 title: "Markup: Text Readability Test"
 excerpt: "A bunch of text to test readability."
 comments: true
+lang: "en-US"
+permalink: /en/example-article-pt-br
 tags: 
   - sample post
   - readability

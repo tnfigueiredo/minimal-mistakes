@@ -1,6 +1,7 @@
 /* ==========================================================================
    jQuery plugin settings and other scripts
    ========================================================================== */
+var LANG = {};
 
 $(function() {
   // FitVids init
@@ -133,4 +134,35 @@ $(function() {
       $(this).append(anchor);
     }
   });
+
+  //Adding language option:
+  var initLanguage = () => {
+    LANG.languages = ['en', 'pt-BR'];
+
+    LANG.loadInitialLanguage = () => {
+      var lang = window.location.pathname.replace('/', '');
+      var lang = (lang=='')?'en':lang.substring(0, lang.indexOf('/'));
+      $( "#app-lang-select").val(lang).change();
+    }
+
+    LANG.changePageLanguage = () => {
+      var selectedLang = $( "#app-lang-select").find(":selected").val();
+      var uri = window.location.pathname;
+      LANG.languages.forEach( (lang) => {
+        uri = uri.replace(`/${lang}`, '');
+      });
+      window.location.replace(`${window.location.origin}/${(uri=='/' && selectedLang=='en')?'':selectedLang}${(uri=='/' && selectedLang=='en')?'':uri}`);
+    }
+
+    $(document).ready(() => {
+      LANG.loadInitialLanguage();
+
+      $( "#app-lang-select").on('change', () => {
+           LANG.changePageLanguage();
+          });
+    });
+  }
+
+  initLanguage();
+
 });
