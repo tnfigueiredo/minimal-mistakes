@@ -6,7 +6,7 @@ header:
   image: /assets/images/home/brasilia-wide.png
 ---
 
-<h1 id="page-title" class="page__title">Hello</h1>
+<h1 id="page-title" class="page__title">Be Welcome!</h1>
 
 This spot came up to centralize and facilitate the content publishing I write, as also for sharing articles and relevant topics
 I believe that are interesting. It will also complement my LinkedIn activities. Besides that, I will keep references to my
