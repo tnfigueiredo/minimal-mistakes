@@ -1,64 +1,64 @@
 ---
-title: " teste"
+title: " "
 layout: splash
 lang: "pt-BR"
 permalink: /pt-BR/about/
-date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/about/about-heading.jpg
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+excerpt: "Um profissional de TI em uma jornada contínua de aprendizagem, estudos, compartilhamento e colaboração."
 intro: 
-  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+  - excerpt: >-
+      Sou graduado em Ciências da Computação pela UCB (Universidade Católica de Brasília), e pós-graduado pela UNIEURO em Arquitetura
+      Orientada a Serviços. Trabalho com TI desde 2003, sendo a maior parte do tempo para o Governo Brasileiro, e para bancos Brasileiros.
+      Meu objetivo de carreira é continuar envolvido com desenvolvimento de soluções que façam diferença na vida das pessoas e que sejam 
+      inovadoras. Mais detalhes sobre minha jornada no meu LinkedIn.
 feature_row:
-  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
+  - title: "Ciências da Computação UCB"
+    excerpt: >-
+      Entrei na universade aos 16 anos de idade, e quando fui aprovado para o curso a universade disponibilizava um curso com conteúdos 
+      nas áreas de engenharia de software, redes, e inteligência artificial. Fiz matérias nas três áreas, atuei em projetos de pesquisa e 
+      extensão da univerdade, e fiz o trabalho de conclusão de curso na área de sistemas inteligentes para ensino. O resultado do trabalho 
+      de conclusão de curso foi uma publicação no Congresso Mundial de Física Médica e Engenharia Biomédica em 2006. 
+    url: "https://ucb.catolica.edu.br/portal/"
+    btn_label: "Veja Mais"
     btn_class: "btn--primary"
-  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-feature_row2:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
+  - title: "MBA em Arquitetura Orientada a Serviço"
+    url: "https://unieuro.grupoceuma.com.br/"
+    btn_label: "Veja Mais"
     btn_class: "btn--primary"
-feature_row3:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-feature_row4:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+    excerpt: >-
+      O curso de especialização foi feito em 2009 quando eu já atuava nas funções de arquitetura de soluções para projetos do Governo Brasileiro. Na época 
+      era uma abordagem moderna para tratar diversos cenários de solução e trouxe um background que eu consigo aproveitar até os dias atuais. O projeto de 
+      conclusão de curso foi baseado em um estudo de caso real sobre a utilziação da abordagem orientada a seriço para mepear os processos de negócio do BRDS 
+      para projetar uma evolução de arquitetura da instituição.
+feature_row1:
+  - title: "Experiências no governo"
+    excerpt: >-
+      Minha carreira começou no SERPRO (Serviço Federal de Processamento de Dados) em projetos da receita federal. Na sequência atuei pelo CONFEA (Conselho 
+      Federal de Engenharia e Arquitetura) no projeto do cadastro nacional de engenheiros e arquitetos. Tive também a oportunidade de trabalhar em projetos 
+      socialmente engrandecedores no FNDE (Fundo Nacional da Educação), MDS (Ministério do Desenvolvimento Social) e TSE (Tribunal Superior Eleitoral).
+      Nessa jornada profissional posso dizer que contribuí muito para a sociedade Brasileira, com o máximo de dedicação possível.
+  - title: "Experiências com Bancos"
+    excerpt: >-
+      Minha primeira experiência com bancos foi em 2007 ao atuar no módulo de pagamentos do Internet Banking do Banco do Brasil. Nesse projeto pude trazer a 
+      unificação do layout de boletos para os diferentes navegadores de internet. Trabalhei também em projetos que eram relacionados com a área de canais do 
+      Banco da Amazônia e Caixa Econômica Federal. Após essa experiência trabalhei com projetos do SICOOB para sistemas de cooperativas de crédito. Foi um 
+      prazer trazer solução para os cliente de um segmento tão exigente.
+  - title: "Experiências Europa"
+    excerpt: >-
+      Minha mudança para a Europa foi com o objetivo de agregar à minha experiência profissional projetos internacionais, além de melhorias na experiência de carreira 
+      em projetos com características diversas. Essa jornada me permitiu trabalhar em projetos envolvendo profissionais de diferentes países nas áreas de banco, supply chain, 
+      telecomunicações, turismo e viagens.
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row %}
+<h1 id="page-title" class="page__title" style="text-align: center;">Área Acadêmica</h1>
 
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row type="center" %}
 
-{% include feature_row id="feature_row3" type="right" %}
+<h1 id="page-title" class="page__title" style="text-align: center;">Carreira</h1>
 
-{% include feature_row id="feature_row4" type="center" %}
+{% include feature_row id="feature_row1" type="center" %}
