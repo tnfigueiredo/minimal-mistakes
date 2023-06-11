@@ -53,6 +53,32 @@ feature_row1:
       telecomunicações, turismo e viagens.
 ---
 
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
+
+{% if author.avatar %}
+  <div class="author__avatar" align="center">
+    <a href="{{ author.home | default: '/' | absolute_url }}">
+      <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
+    </a>
+  </div>
+{% endif %}
+
+<div class="author__urls-wrapper" align="center">
+  <ul class="author__urls social-icons">
+    <li>
+      <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+        <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
 {% include feature_row id="intro" type="center" %}
 
 <h1 id="page-title" class="page__title" style="text-align: center;">Área Acadêmica</h1>
