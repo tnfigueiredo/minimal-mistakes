@@ -1,6 +1,8 @@
 ---
 title: "Logs - Why, good practices, and recommendations"
-excerpt: "A bunch of text to test readability."
+excerpt: >-
+  This article brings an approach related to application logging. This is a very important theme in application development
+  to bring inputs for several stages in the CI/CD cycle for an application.
 comments: true
 lang: "en-US"
 permalink: /en/log-practices-recommendations
