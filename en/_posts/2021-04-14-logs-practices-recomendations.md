@@ -6,6 +6,8 @@ excerpt: >-
 comments: true
 lang: "en-US"
 permalink: /en/log-practices-recommendations
+categories:
+  - Software Engineering
 tags: 
   - good practices
   - software engineering

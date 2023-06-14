@@ -6,9 +6,13 @@ excerpt: >-
 comments: true
 lang: "en-US"
 permalink: /en/web-apis-approaches
+categories:
+  - Software Engineering
+  - APIs
+  - Software Design
 tags: 
   - architecture
-  - design
+  - software design
   - API
 ---
 
