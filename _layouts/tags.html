@@ -6,15 +6,25 @@ layout: archive
 
 {% assign tags_max = 0 %}
 {% for tag in site.tags %}
-  {% if tag[1].size > tags_max %}
-    {% assign tags_max = tag[1].size %}
+  {% if page.lang contains 'en' %}
+    {% assign filtered_tags = tag[1] | where_exp:"posts", "posts.url contains '/en/'" %}
+  {% else %}
+    {% assign filtered_tags = tag[1] | where_exp:"posts", "posts.url contains page.lang" %}
+  {% endif %}
+  {% if filtered_tags.size > tags_max %}
+    {% assign tags_max = filtered_tags.size %}
   {% endif %}
 {% endfor %}
 
 <ul class="taxonomy__index">
   {% for i in (1..tags_max) reversed %}
     {% for tag in site.tags %}
-      {% if tag[1].size == i %}
+      {% if page.lang contains 'en' %}
+        {% assign filtered_tags = tag[1] | where_exp:"posts", "posts.url contains '/en/'" %}
+      {% else %}
+        {% assign filtered_tags = tag[1] | where_exp:"posts", "posts.url contains page.lang" %}
+      {% endif %}
+      {% if filtered_tags.size == i %}
         <li>
           <a href="#{{ tag[0] | slugify }}">
             <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
@@ -28,11 +38,21 @@ layout: archive
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% for i in (1..tags_max) reversed %}
   {% for tag in site.tags %}
-    {% if tag[1].size == i %}
+    {% if page.lang contains 'en' %}
+      {% assign filtered_tags = tag[1] | where_exp:"posts", "posts.url contains '/en/'" %}
+    {% else %}
+      {% assign filtered_tags = tag[1] | where_exp:"posts", "posts.url contains page.lang" %}
+    {% endif %}
+    {% if filtered_tags.size == i %}
       <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ tag[0] }}</h2>
         <div class="entries-{{ entries_layout }}">
-          {% for post in tag.last %}
+          {% if page.lang contains 'en' %}
+            {% assign filtered_posts = tag.last | where_exp:"posts", "posts.url contains '/en/'" %}
+          {% else %}
+            {% assign filtered_posts = tag.last | where_exp:"posts", "posts.url contains page.lang" %}
+          {% endif %}
+          {% for post in filtered_posts %}
             {% include archive-single.html type=entries_layout %}
           {% endfor %}
         </div>

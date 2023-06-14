@@ -6,6 +6,9 @@ main:
   - title: "About"
     title_key: "menu_about"
     url: /about/
+  - title: "Tags"
+    title_key: "menu_tags"
+    url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
