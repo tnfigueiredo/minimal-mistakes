@@ -135,13 +135,13 @@ As it is possible to see, those tools provide very interesting features related 
 ## References
 
 ##### Logging Best Practices:
-[Ray Saltrelli - https://dev.to/raysaltrelli/logging-best-practices-obo/](https://dev.to/raysaltrelli/logging-best-practices-obo)
+* [Ray Saltrelli - https://dev.to/raysaltrelli/logging-best-practices-obo/](https://dev.to/raysaltrelli/logging-best-practices-obo)
 
 ##### Logging best practices in an app or add-on for Splunk Enterprise:
-[https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/loggingbestpractices/](https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/loggingbestpractices/)
+* [https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/loggingbestpractices/](https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/loggingbestpractices/)
 
 ##### The Importance of logging: introducing Elastic Stack
-[Christian Claudio Bohm - https://www.hexacta.com/importance-logging-introducing-elastic-stack/](https://www.hexacta.com/importance-logging-introducing-elastic-stack/)
+* [Christian Claudio Bohm - https://www.hexacta.com/importance-logging-introducing-elastic-stack/](https://www.hexacta.com/importance-logging-introducing-elastic-stack/)
 
 ##### 9 Logging Best Practices Based on Hands-on Experience
-[Liron Tal - https://www.loomsystems.com/blog/single-post/2017/01/26/9-logging-best-practices-based-on-hands-on-experience](https://www.loomsystems.com/blog/single-post/2017/01/26/9-logging-best-practices-based-on-hands-on-experience)
+* [Liron Tal - https://www.loomsystems.com/blog/single-post/2017/01/26/9-logging-best-practices-based-on-hands-on-experience](https://www.loomsystems.com/blog/single-post/2017/01/26/9-logging-best-practices-based-on-hands-on-experience)
