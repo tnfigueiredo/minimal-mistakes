@@ -11,9 +11,10 @@ categories:
 tags: 
   - good practices
   - software engineering
+toc: true
 ---
 
-![logs-top-image]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/logs.png){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/logs.png" alt="logs-top-image" %}
 
 ## Why logging is important?
 
@@ -26,7 +27,7 @@ Considering those issues related to the importance of logs it is necessary to de
 data from logs. This brings the need to define a structure for log messages. The need to define a log structure is to extract the information needed (most of the 
 time with the support of tools).
 
-![log-structure]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/log-structure.jpeg){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/log-structure.jpeg" alt="log-structure" caption="Log structure" %}
 
 Another issue that is worthy to mention is that log messages need to be sent at least in every layer of the architecture with meaningful and enough contextual information. 
 Having at least one log entry per request/result in every layer of the application allows providing accurate context about what the user was doing when a specific error 
@@ -42,16 +43,16 @@ The usage of a good logging strategy needs to take into consideration the proper
 to avoid “noise” when looking for information and track possible evidences to evaluate a problem or analyze the application behavior. The main cons about this are that when a 
 problem comes up, you are likely to proper contextual information to be analyzed.
 
-![loggin-levels]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/loggin-levels.png){: .align-center}
+![logging-levels]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/logging-levels.png){: .align-center}
 
 There will be frameworks to help handle logging messages for the different programming languages and the definition among the log levels can slightly vary among the 
 framework implementations. But they follow the same semantic purpose. The following example shows this for a few Java frameworks possible to be used.
 
-![logging-level-config]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/logging-level-config.png){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/logging-level-config.png" alt="logging-level-config" %}
 
 The log level information has well-defined usage recommendations for each situation:
 
-![logging-level-behaviour]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/logging-level-behaviour.png){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/logging-level-behaviour.png" alt="logging-level-behaviour" %}
 
 ## Good practice recommendations
 
@@ -116,21 +117,19 @@ The logging tools that we have available do streaming over log messages and cent
 There are several examples of logging tools nowadays, but here follow the example of the structure of two of them. The first image is from an example using splunk, and the following image 
 is an example using the Elastic stack:
 
-![example-stack-1]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/example-stack-1.png){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/example-stack-1.png" alt="example-stack-1" caption="Splunk structure" %}
 
-![example-stack-2]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/exmaple-stack-2.png){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/example-stack-2.png" alt="example-stack-2" caption="Kibana structure" %}
 
 Those tools get the log messages through collectors and store the information into repositories where the information is indexed. When the collectors get the information, they analyze the 
 log structure to process its data before storage. Once the log messages are stored and indexed it is possible to search information, create charts and create alerts through the interface of 
 those tools. Here follow a few examples of the mentioned log searching UI. The presented UIs are from the tools Splunk, Graylog, and Kibana.
 
-Splunk:
+{% include figure image_path="/assets/images/logs-practices-recommendations/log-reader-example-1.png" alt="log-reader-example-1" caption="Splunk interface" %}
 
-![log-reader-example-1]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/log-reader-example-1.png){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/log-reader-example-2.jpeg" alt="log-reader-example-2" caption="Graylog interface" %}
 
-![log-reader-example-2]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/log-reader-exmaple-2.jpeg){: .align-center}
-
-![log-reader-example-3]({{ site.url }}{{ site.baseurl }}/assets/images/logs-practices-recommendations/log-reader-exmaple-3.jpeg){: .align-center}
+{% include figure image_path="/assets/images/logs-practices-recommendations/log-reader-example-3.jpeg" alt="log-reader-example-3" caption="Kibana interface" %}
 
 As it is possible to see, those tools provide very interesting features related to logging activity. That brings a good reason to work with the messages following a well-defined structure, good practices, and recommendations. It makes the log information possible to be processed, tracked, and handled by the referred tools so they become useful.
 

@@ -16,7 +16,7 @@ tags:
   - API
 ---
 
-![api-top-image]({{ site.url }}{{ site.baseurl }}/assets/images/web-apis-approaches/apis-top.png){: .align-center}
+{% include figure image_path="/assets/images/web-apis-approaches/apis-top.png" alt="apis-top-image" %}
 
 Web APIs are one of the most common resources used for design several solutions related to integration scenarios, microservice 
 applications, and other very common solutions that are built on top of the HTTP protocol.
@@ -80,7 +80,7 @@ described in this dissertation. It uses as most common formats JSON or XML but c
 * Service URIs are easily readable due to their strict semantic;
 * Hypermedia allows actions and relationships to be made discoverable.
 
-![api-scope]({{ site.url }}{{ site.baseurl }}/assets/images/web-apis-approaches/apis-scope.jpg){: .align-center}
+{% include figure image_path="/assets/images/web-apis-approaches/apis-scope.jpg" alt="apis-scope" caption="APIs' styles scope" %}
 
 The RESTful APIs are considered good options when there are issues involved like common workflows to be followed, caching of resource 
 information, not a very reduced payload restriction, content negotiation necessary to provide a response to the clients, etc.
@@ -121,21 +121,21 @@ communicate internally. But when there is communication among different contexts
 scenario is when this interaction between client and server requires a workflow among a set of well-defined resources (for example, 
 a payment workflow).
 
-![contexts-interaction]({{ site.url }}{{ site.baseurl }}/assets/images/web-apis-approaches/contexts-interaction.jpeg){: .align-center}
+{% include figure image_path="/assets/images/web-apis-approaches/contexts-interaction.jpeg" alt="contexts-interaction.jpeg" %}
 
 Proposing a scenario where GraphQL would be a good fit, we can consider an interaction among the client of an API where to recover 
 information needed will demand several requests or iterations to achieve the final purpose. For example, lest suppose there is the 
 need to call “/users/” endpoint to fetch the initial user data, then call a “/users//posts” endpoint to return all the posts for a user, 
 and then call a “/users//followers” to return a list of followers per user.
 
-![sample-api-requests]({{ site.url }}{{ site.baseurl }}/assets/images/web-apis-approaches/sample-api-requests.png){: .align-center}
+{% include figure image_path="/assets/images/web-apis-approaches/sample-api-requests.png" alt="sample-api-requests.png" caption="RESTful API calls example" %}
 
 When evaluating this interaction through the perspective of a data-driven API this information could be recovered into a single interaction. 
 It is possible to be considered also in a scenario where the relationship between the resources is hard to be handled through a set of 
 interactions into RESTful resources. Or also when there is needed to recover a customized set of information involving fields of different 
 resources to compose a single response.
 
-![contexts-interaction-2]({{ site.url }}{{ site.baseurl }}/assets/images/web-apis-approaches/sample-api-requests-2.png){: .align-center}
+{% include figure image_path="/assets/images/web-apis-approaches/sample-api-requests-2.png" alt="sample-api-requests-2.png" caption="GraphQL API calls example" %}
 
 ## References
 
