@@ -1,7 +1,7 @@
 ---
 title: " "
 layout: splash
-lang: "en-US"
+lang: "en"
 permalink: en/about/
 author_profile: true
 header:

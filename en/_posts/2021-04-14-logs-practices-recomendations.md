@@ -4,7 +4,7 @@ excerpt: >-
   This article brings an approach related to application logging. This is a very important theme in application development
   to bring inputs for several stages in the CI/CD cycle for an application.
 comments: true
-lang: "en-US"
+lang: "en"
 permalink: /en/log-practices-recommendations
 categories:
   - Software Engineering

@@ -4,8 +4,9 @@ excerpt: >-
   This article brings a vision related to the possible different APIs approaches and the possible scenarios where those approaches 
   can be used to solve the proposed problem.
 comments: true
-lang: "en-US"
-permalink: /en/web-apis-approaches
+lang: "en"
+permalink: en/web-apis-approaches
+toc: true
 categories:
   - Software Engineering
   - APIs
@@ -26,9 +27,10 @@ applications, and other very common solutions that are built on top of the HTTP 
 If we look to WEB APIs as a solution alternative, it is possible to see that it became an interesting option because it works 
 over an interoperable protocol widely used. This option mitigates several problems that we might face when building the system's 
 integration and features. Since we are talking about APIs, it is important to understand some principles that we need to use 
-to guide a solution approach: APIs – Application program interface – are most commonly expressed as a set of operations, 
-associated data definitions, and the semantics of the operations on some underlying system (David Emery - Association for 
-Computing Machinery).
+to guide a solution approach: 
+
+> APIs – Application program interface – are most commonly expressed as a set of operations, associated data definitions, and the 
+semantics of the operations on some underlying system (David Emery - Association for Computing Machinery).
 
 There are other similar definitions, but taking this one as a basis we can see that semantic is something very important when 
 designing an API. The API semantics depends on the WEB API Design approach, its usage of HTTP verbs, definitions about application 

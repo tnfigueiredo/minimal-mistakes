@@ -4,8 +4,9 @@ excerpt: >-
   This is a very entry level article about how to use Kafka for asynchronous communication model and message systems. It has
   just a simple example about how to use it.
 comments: true
-lang: "en-US"
+lang: "en"
 permalink: /en/sample-about-communication-with-kafka
+toc: true
 categories:
   - Software Engineering
   - Messaging Systems
@@ -60,14 +61,14 @@ two messaging models (queuing and publish-subscribe) to provide the key benefits
 
 ## Producer and Consumer example using Kafka
 
-Apache Kafka is a real-time data streaming technology capable of handling trillions of events per day. It is commonly used to build real-time streaming data 
+> Apache Kafka is a real-time data streaming technology capable of handling trillions of events per day. It is commonly used to build real-time streaming data 
 pipelines and event-driven applications. It provides distributed, high-throughput, low-latency, fault-tolerant platform for handling real-time data feeds - 
-known as events. More details can be found in the [Apache Kafka official page](https://kafka.apache.org/documentation/). The main idea here is to show a 
-sample of Kafka usage to send and consume messages for asynchronous communication.
-
-To illustrate a producer and an consumer it was created 2 Kotlin applications using Kafka as samples that consumes Tweets based on some parameters and save 
-them in a ElasticSearh repository to allow search of the Tweets content. In a real world application it can be used to track subjects or themes that are 
-trend topics for any specific reason. More details about the implementation itself can be checked [here](https://github.com/tnfigueiredo/kafka-twitter-dempo-app).
+known as events. More details can be found in the [Apache Kafka official page](https://kafka.apache.org/documentation/). 
+ 
+The main idea here is to show a sample of Kafka usage to send and consume messages for asynchronous communication. To illustrate a producer and a consumer it was 
+created 2 Kotlin applications using Kafka as samples that consumes Tweets based on some parameters and save them in a ElasticSearh repository to allow search of 
+the Tweets content. In a real world application it can be used to track subjects or themes that are trend topics for any specific reason. More details about the 
+implementation itself can be checked [here](https://github.com/tnfigueiredo/kafka-twitter-dempo-app).
 
 In this sample it was not deeply explored the set of [consumer configurations](https://kafka.apache.org/documentation/#consumerconfigs) or 
 [producer configurations](https://kafka.apache.org/documentation/#producerconfigs). The main idea is to highlight a simple implementation to produce messages/events 
