@@ -5,7 +5,7 @@ excerpt: >-
   to have project improvements.
 comments: true
 lang: "en"
-permalink: /en/_posts/2023-06-20-living-doc-bdd
+permalink: /en/2023-06-20-living-doc-bdd
 toc: true
 categories:
   - Software Engineering
