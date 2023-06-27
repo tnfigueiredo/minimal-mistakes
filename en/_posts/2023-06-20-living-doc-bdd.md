@@ -69,7 +69,7 @@ has an orchestrated delivery process it is just to take advantage of its good us
 
 One of the important aspects of CI/CD is bringing visibility to the executed process. Part of this process is addressed to the tech 
 team itself, but part of the visibility in the process means making it clear to the stakeholders. From the stakeholder's perspective, 
-the living documentation makes it possible to check the features validates and also the business rules covered in the application's 
+the living documentation makes it possible to check the features validated and also the business rules covered in the application's 
 automated test process.
 
 ### User Stories and event mapping
