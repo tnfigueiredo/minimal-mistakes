@@ -91,7 +91,7 @@ When we think of Domain Events, the process is not so direct. So it is necessary
 resulting from [Event Storming sessions](https://creately.com/blog/meeting-visual-collaboration/event-storming/) to business 
 requirements possible to be [validated as an acceptance criteria](https://cucumber.io/blog/bdd/bdd-with-event-mapping/).
 
-{% include figure image_path="assets/images/living-doc-bdd/event-mapping-bdd.jpg" alt="event-mapping-bdd.jpg" %}
+{% include figure image_path="assets/images/living-doc-bdd/event-mapping-bdd.png" alt="event-mapping-bdd.png" %}
 
 In both cases, the main purpose is to create a relationship between the requirements artifacts and the software deliverables 
 validation. In the practical example it will become clearer how this relationship can be created.
