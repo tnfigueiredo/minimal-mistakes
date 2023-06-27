@@ -62,7 +62,7 @@ human-readable record of each feature verified and kept current via an automated
 ## Getting living documentation in the software delivery process
 
 All the topics covered by now had the purpose of bringing some background to justify having living documentation in the software 
-7delivery process. And it fits perfectly with having an automated software delivery process through CI/CD approaches. Once a project 
+delivery process. And it fits perfectly with having an automated software delivery process through CI/CD approaches. Once a project 
 has an orchestrated delivery process it is just to take advantage of its good usage to bring to the project automated documentation.
 
 {% include figure image_path="assets/images/living-doc-bdd/CI-CD.png" alt="CI-CD.png" %}
