@@ -83,7 +83,7 @@ If there is the purpose of matching project requirements, software deliverables,
 match requirements artifacts with project coding.
 
 Thinking of a User Story as a description of a business need through a user perspective, the acceptance criteria written in BDD 
-fits as a matcher to validate if the those business requirements are met.
+fits as a matcher to validate if those business requirements are met.
 
 {% include figure image_path="assets/images/living-doc-bdd/user-story-acceptance-criteria.png" alt="user-story-acceptance-criteria.png" %}
 
