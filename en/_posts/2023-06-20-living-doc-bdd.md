@@ -1,5 +1,5 @@
 ---
-title: "How living documentation and user stories acceptance tests can bring improvements?"
+title: "How living documentation and BDD tests can bring project improvements?"
 excerpt: >-
   This article brings the benefits of using a BDD approach through user story acceptance criteria 
   to have project improvements.
