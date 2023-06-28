@@ -122,7 +122,7 @@ has as a final result a working software.
 
 ### Practical example
 
-To bring an example it was created a [GitHub Project](https://github.com/tnfigueiredo/living-doc-kotlin-spring-sample) with a sample using 
+To bring an example it was created a [GitHub repo](https://github.com/tnfigueiredo/living-doc-kotlin-spring-sample) with a sample using 
 Kotlin, Cucumber, Serenity and Gradle to show some features for a BDD approach to generate project business documentation into the SDLC 
 (software development life cycle). it was created a fictitious business scenario for a course center to illustrate an example of this 
 approach. The sample in the GitHub repo explore a few more things, but here it will be presented mainly a general scenario for creating 
