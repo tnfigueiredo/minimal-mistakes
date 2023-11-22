@@ -153,15 +153,15 @@ only the initial state of this possible scenario. For this domain it is possible
 #### Expected result over the documentation
 
 The expected results is to have a separation of topics according to the project epics (Departments, Students, Courses). The project epics
-will be the starting point to crate the user stories relates to those mapped use cases presented previously. Each use case will be related to a set
-of user stories that will describe the application features. And for each user story there will be available some acceptance
-criteria that will validate the business rule to be followed. It is possible to consider it will be something like this:
+will be the starting point to crate the user stories. Each use case above has a set of scenarios that describe the business needs. Those 
+business needs will be the input to create the user stories that will describe the application features. And for each user story there will 
+be available some acceptance criteria that will validate the business rule to be followed. It is possible to consider it will be something like this:
 
-{% include figure image_path="assets/images/living-doc-bdd/spec-struct.jpeg" alt="spec-struct.jpeg" %}
+{% include figure image_path="assets/images/living-doc-bdd/spec-struct.png" alt="spec-struct.png" %}
 
-This structure will be the concept to create the files in the documentation for the BDD test cases and specification. Since it is common to
-group the user stories in epics, the layer described as use cases will not be present in the documentation. The files structure will
-be explained better when presenting it in the source code project structure.
+This structure will be the concept to create the files in the documentation for the BDD test cases and specification. The user stories are grouped 
+in epics, and each user story will have its acceptance criteria. The files structure will be explained better when presenting it in the 
+source code project structure.
 
 #### Project structure
 
@@ -179,41 +179,43 @@ structure. For the test source code there are 3 main components:
 
 The sample of this project follows the recommended file structure mentioned on the [Serenity official
 documentation](https://serenity-bdd.github.io/docs/reporting/living_documentation#the-requirements-hierarchy). This file structure
-was organized into a hierarchy for Epics and features, being the feature files used to describe a set of User Stories. The Epics are
-described through "readme.md" files, which bring the Epic business description. The feature files represent the Use Cases description,
-which will group the User Stories related to that:
+was organized into a hierarchy for Epics and features, being the feature files used to describe the User Stories. The Epics are
+described through "readme.md" files, which bring the Epic business description. The feature files brings each User Story description 
+and business rules, together with its acceptance criteria:
 
 {% include figure image_path="assets/images/living-doc-bdd/spec-files-structure.png" alt="spec-files-structure.png" %}
 
 Once the files structure is described it is easier to understand how the Given/When/Then BDD definitions written in the Gherkin files
-are related to the steps definition implementation. In this sample, the Use Case feature file is related to the StepsDefinition BDD test
+are related to the steps definition implementation. In this sample, the User Story feature files are related to the StepsDefinition BDD test
 implementation, except for the Students Epic which has the implementation in a single class:
 
 
-| Feature File     | Koltin Implementation |
-|------------------|-----------------------|
-| manage_courses.feature    | CoursesManagementStepsDefinition.kt |
-| report_students_by_course.feature | CoursesReportStepsDefinition.kt |
-| manage_departments.feature | DepartmentsManagementStepsDefinition.kt |
-| report_courses_by_department.feature | DepartmentsReportStepsDefinition.kt |
-| course_enrollment.feature and course_participation_cancellation.feature | StudentsManagementStepsDefinition.kt |
+| Feature File                                                       | Koltin Implementation |
+|--------------------------------------------------------------------|-----------------------|
+| cancel_course.feature</br>create_course.feature</br>modify_course.feature | CoursesManagementStepsDefinition.kt |
+| report_students_by_course.feature                                  | CoursesReportStepsDefinition.kt |
+| create_department.feature</br>create_department_subject.feature</br>deactivate_department.feature</br>deactivate_department_subject.feature</br>modify_department.feature</br>modify_department_subject.feature                                        | DepartmentsManagementStepsDefinition.kt |
+| report_courses_by_department.feature                               | DepartmentsReportStepsDefinition.kt |
+| course_enrollment.feature</br>course_participation_cancellation.feature | StudentsManagementStepsDefinition.kt |
 
 Here follows an example for the mentioned files:
 
 - Feature specification:
 
 ```gherkin
-   Feature: Manage Courses
-   
-     A use case description...
-   
-     Rule: A business rule...
-   
-       Scenario: Create a course successfully
-         Given A department administrator needs to manage course information
-         And there is an existing course: "MyCourse1", "MyC1", "Programming", "2023-02-18", "2023-06-16"
-         When it is informed the course information: "MyCourse2", "MyC2", "Programming", "2023-07-18", "2023-12-16"
-         Then a course is created successfully
+   Feature: Create Courses
+
+  **As a** Departament Manager
+  **I want to** create a new course
+  **So that I can** have a course available into the department to offer to the students
+
+  Rule: A course can be created if there is no course for a subject between the initial and end date.
+
+    Scenario: Create a course successfully
+      Given A department administrator needs to manage course information
+      And there is an existing course: "MyCourse1", "MyC1", "Programming", "2023-02-18", "2023-06-16"
+      When it is informed the course information: "MyCourse2", "MyC2", "Programming", "2023-07-18", "2023-12-16"
+      Then a course is created successfully
 ```
 
 - Steps definition:
