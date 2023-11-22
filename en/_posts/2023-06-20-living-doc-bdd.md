@@ -190,13 +190,13 @@ are related to the steps definition implementation. In this sample, the User Sto
 implementation, except for the Students Epic which has the implementation in a single class:
 
 
-| Feature File                                                       | Koltin Implementation |
-|--------------------------------------------------------------------|-----------------------|
-| cancel_course.feature</br>create_course.feature</br>modify_course.feature | CoursesManagementStepsDefinition.kt |
-| report_students_by_course.feature                                  | CoursesReportStepsDefinition.kt |
-| create_department.feature</br>create_department_subject.feature</br>deactivate_department.feature</br>deactivate_department_subject.feature</br>modify_department.feature</br>modify_department_subject.feature                                        | DepartmentsManagementStepsDefinition.kt |
-| report_courses_by_department.feature                               | DepartmentsReportStepsDefinition.kt |
-| course_enrollment.feature</br>course_participation_cancellation.feature | StudentsManagementStepsDefinition.kt |
+| Feature File                                                                                                                                                                                                    | Koltin Implementation |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| cancel_course.feature\ncreate_course.feature\nmodify_course.feature                                                                                                                                             | CoursesManagementStepsDefinition.kt |
+| report_students_by_course.feature                                                                                                                                                                               | CoursesReportStepsDefinition.kt |
+| create_department.feature</br>create_department_subject.feature</br>deactivate_department.feature</br>deactivate_department_subject.feature</br>modify_department.feature</br>modify_department_subject.feature | DepartmentsManagementStepsDefinition.kt |
+| report_courses_by_department.feature                                                                                                                                                                            | DepartmentsReportStepsDefinition.kt |
+| course_enrollment.feature</br>course_participation_cancellation.feature                                                                                                                                         | StudentsManagementStepsDefinition.kt |
 
 Here follows an example for the mentioned files:
 
