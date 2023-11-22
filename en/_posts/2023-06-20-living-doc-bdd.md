@@ -189,14 +189,60 @@ Once the files structure is described it is easier to understand how the Given/W
 are related to the steps definition implementation. In this sample, the User Story feature files are related to the StepsDefinition BDD test
 implementation, except for the Students Epic which has the implementation in a single class:
 
-
-| Feature File                                                                                                                                                                                                    | Koltin Implementation |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| cancel_course.feature\ncreate_course.feature\nmodify_course.feature                                                                                                                                             | CoursesManagementStepsDefinition.kt |
-| report_students_by_course.feature                                                                                                                                                                               | CoursesReportStepsDefinition.kt |
-| create_department.feature</br>create_department_subject.feature</br>deactivate_department.feature</br>deactivate_department_subject.feature</br>modify_department.feature</br>modify_department_subject.feature | DepartmentsManagementStepsDefinition.kt |
-| report_courses_by_department.feature                                                                                                                                                                            | DepartmentsReportStepsDefinition.kt |
-| course_enrollment.feature</br>course_participation_cancellation.feature                                                                                                                                         | StudentsManagementStepsDefinition.kt |
+<table>
+    <thead>
+        <tr>
+            <th>Koltin Implementation</th>
+            <th>Feature File</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3>CoursesManagementStepsDefinition.kt</td>
+            <td>cancel_course.feature</td>
+        </tr>
+        <tr>
+          <td>create_course.feature</td>
+        </tr>
+        <tr>
+            <td>modify_course.feature</td>
+        </tr>
+        <tr>
+            <td>CoursesReportStepsDefinition.kt</td>
+            <td>report_students_by_course.feature</td>
+        </tr>
+        <tr>
+            <td rowspan=6>CoursesManagementStepsDefinition.kt</td>
+            <td>create_department.feature</td>
+        </tr>
+        <tr>
+            <td>create_department_subject.feature</td>
+        </tr>
+        <tr>
+            <td>deactivate_department.feature</td>
+        </tr>
+        <tr>
+            <td>deactivate_department_subject.feature</td>
+        </tr>
+        <tr>
+            <td>modify_department.feature</td>
+        </tr>
+        <tr>
+            <td>modify_department_subject.feature</td>
+        </tr>
+        <tr>
+            <td>DepartmentsReportStepsDefinition.kt</td>
+            <td>report_courses_by_department.feature</td>
+        </tr>
+        <tr>
+            <td rowspan=2>StudentsManagementStepsDefinition.kt</td>
+            <td>course_enrollment.feature</td>
+        </tr>
+        <tr>
+            <td>course_participation_cancellation.feature</td>
+        </tr>
+    </tbody>
+</table>
 
 Here follows an example for the mentioned files:
 
