@@ -21,11 +21,7 @@ tags:
 
 {% include figure image_path="assets/images/living-doc-bdd/mag-glass-ci-cd.jpg" alt="mag-glass-ci-cd.jpg" %}
 
-In the software development community it is a known fact that keep documentation up to date according to the project requirements 
-is something that needs team discipline, project deadlines, corporate policies and processes, and other issues. To keep documentation 
-quality aligned with source code quality it is possible to take advantage of a TDD/BDD approach and artifacts generated through CI/CD 
-pipelines. Depending on the project situation the teams sometimes choose to focus on delivering a running version of the project 
-accepting the trade-off of giving not so much attention to code quality, test coverage, and related topics.
+In the software development community, it is a known fact that keeping documentation up to date according to the project requirements is something that needs team discipline. Several issues (like project deadlines, corporate policies and processes, and other issues) may impact to keep documentation quality aligned with source code. Depending on the project situation the teams sometimes choose to focus on delivering a running version of the project accepting the trade-off of giving not so much attention to code quality, test coverage, and related topics. In different scenarios, it is possible to take advantage of a TDD/BDD approach and artifacts generated through CI/CD pipelines to reach this goal of keeping software documentation according to the project deliverables.
 
 {% include figure image_path="assets/images/living-doc-bdd/why.jpg" alt="why.jpg" %}
 
