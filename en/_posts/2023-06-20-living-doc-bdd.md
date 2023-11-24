@@ -115,24 +115,13 @@ has as a final result a working software.
 
 ### Practical example
 
-To bring an example it was created a [GitHub repo](https://github.com/tnfigueiredo/living-doc-kotlin-spring-sample) with a sample using 
-Kotlin, Cucumber, Serenity and Gradle to show some features for a BDD approach to generate project business documentation into the SDLC 
-(software development life cycle). it was created a fictitious business scenario for a course center to illustrate an example of this 
-approach. The sample in the GitHub repo explore a few more things, but here it will be presented mainly a general scenario for creating 
-the software specification based on user stories and how it is related to software documentation in an SDLC.
+To bring an example it was created a [GitHub repo](https://github.com/tnfigueiredo/living-doc-kotlin-spring-sample) with a sample using Kotlin, Cucumber, Serenity and Gradle to show some features for a BDD approach to generate project business documentation into the SDLC(software development life cycle). it was created a fictitious business scenario for a course center to illustrate an example of this approach. The sample in the GitHub repo explore a few more things, but here it will be presented mainly a general scenario for creating the software specification based on user stories and how it is related to software documentation in an SDLC.
 
-According to the mentioned idea, this fictitious scenario is to help us to describe the living documentation approach. To make it closer 
-to an ongoing project following an Agile SDLC, we are going to have features done from a previous delivery, and pending features to be implemented in future sprints.
-
-Taking this previous description in consideration, here follows a class diagram to bring an idea of the domain model for the project. In this domain 
-it is possible to consider as main business concepts: departments, courses, and students. Those domain concepts will be mapped as the epics for this project, 
-and they will be the criteria for the user stories classification.
+Taking this previous description in consideration, here follows a class diagram to bring an idea of the domain model for the project. In this domain it is possible to consider as main business concepts: departments, courses, and students. Those domain concepts will be mapped as the epics for this project, and they will be the criteria for the user stories classification.
 
 ![cached image](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/tnfigueiredo/living-doc-kotlin-spring-sample/master/docs/myfictitious-course-center-domain.puml)
 
-Considering a proposal for developing the features in a possible BDD approach, it is possible to take in consideration a set of features done, 
-a set of features as pending for the next software delivery cycles. The repository has more details about it, but here it will be mentioned 
-only the initial state of this possible scenario. For this domain it is possible to consider the following set of use cases:
+Considering a proposal for developing the features in a possible BDD approach, it is possible to take in consideration a set of features done, a set of features as pending for the next software delivery cycles (to make it closer to an ongoing project following an Agile SDLC, simulating features done from a previous delivery, and pending features to be implemented in future sprints). According to the mentioned idea, this fictitious scenario is to help us to describe the living documentation approach. The repository has more details about it, but here it will be mentioned only the initial state of this possible scenario. For this domain it is possible to consider the following set of use cases:
 
 #### Departments use cases
 ![cached image](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/tnfigueiredo/living-doc-kotlin-spring-sample/master/docs/departments-use-cases.puml)
