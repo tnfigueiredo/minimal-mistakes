@@ -25,10 +25,7 @@ In the software development community, it is a known fact that keeping documenta
 
 {% include figure image_path="assets/images/living-doc-bdd/why.jpg" alt="why.jpg" %}
 
-Even being aware of the mentioned scenario it is undeniable that projects need documentation to register knowledge related to 
-the business domain and also important aspects of the solution itself. When we come to the reality of agile projects it is 
-important to take into consideration that documentation might be the right fit for project activities to not become something 
-overwhelming and that will be the result of some effort that no one will read.
+Even being aware of the mentioned scenario in software projects, it is undeniable that projects need documentation to register knowledge related to the business domain and also important aspects of the solution itself. When we come to the reality of agile projects it is important to take into consideration that documentation might be the right fit for project activities to not become something overwhelming and that will be the result of some effort that no one will read.
 
 ## BDD and effective software documentation
 
